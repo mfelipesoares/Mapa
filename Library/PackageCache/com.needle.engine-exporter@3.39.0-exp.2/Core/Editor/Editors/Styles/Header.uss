@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-top: 10px;
+    height: 22px;
+    min-height: 22px;
+    margin-bottom: 5px;
+}
+
+.header > * {
+    align-self: center;
+    color: white;
+}
+
+.__light .header > * {
+    color: black;
+}
+
+.header .logo {
+    margin-left: -8px;
+    margin-top: 6.5px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../Assets/logo.png");
+}
+
+.header .title {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.non-commercial {
+    margin-top: 10px;
+    align-self: center;
+    color: rgba(220, 230, 120, 1);
+}
+
+.license-type {
+    color: rgba(120, 120, 130, .9);
+    padding-left: 5px;
+}

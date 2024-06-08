@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns="UnityEngine.UIElements">
+    <Style src="DefaultStyles.uss"/>
+    <Style src="Header.uss"/>
+    <VisualElement>
+        <VisualElement class="header">
+            <Image class="logo"/>
+            <Label class="h1 title" text="Needle Engine"/>
+            <Label class="h1 license-type" text=""/> 
+        </VisualElement>
+        <Label class="subtitle non-commercial link" text="NO COMMERCIAL LICENSE" name="preferences:license-window"/>
+    </VisualElement>
+</UXML>

@@ -1,0 +1,8 @@
+{
+	"name": "Needle.Engine.Server",
+	"rootNamespace": "Needle.Engine.Server",
+	"autoReferenced": false,
+	"includePlatforms": [
+		"Editor"
+	]
+}

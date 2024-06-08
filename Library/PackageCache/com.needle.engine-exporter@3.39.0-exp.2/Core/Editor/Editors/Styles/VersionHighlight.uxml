@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns="UnityEngine.UIElements">
+
+    <Style src="DefaultStyles.uss"/>
+    <Style src="VersionHighlightStyle.uss"/>
+
+    <VisualElement class="highlight-element">
+        <VisualElement class="horizontal-layout">
+            <TextElement class="title" text="title"/>
+        </VisualElement>
+        <VisualElement class="body">
+        </VisualElement>
+    </VisualElement>
+</UXML>

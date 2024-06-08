@@ -1,0 +1,143 @@
+
+.h1 {
+    font-size: 16px;
+    -unity-font-style: bold;
+}
+
+.h2 {
+    font-size: 14px;
+    -unity-font-style: bold;
+}
+
+.h3 {
+    font-size: 12px;
+    -unity-font-style: bold;
+}
+
+.horizontal-layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.mark-attention {
+    border-color: rgba(255, 255, 0, .1);
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 0, .1);
+}
+
+.mark-attention .unity-text-field__input {
+    background-color: rgba(50, 50, 20, .5);
+    border-color: rgba(255,255,0,.1);
+}
+
+.link {
+    cursor: link;
+}
+
+.paragraph {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.low-contrast {
+    opacity: .5;
+}
+
+TextElement.low-contrast {
+    opacity: .5;
+}
+
+Button {
+    cursor: link;
+}
+
+Button.small, TextElement.link {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    color: #969AB0;
+    padding: 0;
+    border-color: rgba(120, 120, 120, .5);
+    border-radius: 0;
+}
+
+Button.small:hover, TextElement.link:hover {
+    cursor: link;
+    color: white;
+}
+
+.__light Button.small {
+    color: #4a5475;
+}
+
+.__light Button.small:hover {
+    color:black;
+}
+
+Button.big.center {
+    width: 150px;
+}
+
+Button.big {
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    flex-grow: 0;
+}
+
+.footer {
+    flex-direction: row;
+    bottom: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    justify-content: space-between;
+    /*background-color: rgba(0, 0, 0, .5);*/
+}
+
+.footer Button {
+    flex-grow: 0;
+}
+
+.footer .left {
+    align-self: flex-start;
+    flex-direction: column;
+    -unity-text-align: middle-left;
+}
+
+.footer .right {
+    align-self: flex-end;
+    flex-direction: column;
+    -unity-text-align: middle-right;
+}
+
+.footer .left Button {
+    -unity-text-align: middle-left;
+}
+
+.footer .middle {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.footer .right {
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.footer .right Label {
+    padding-left: 5px;
+}

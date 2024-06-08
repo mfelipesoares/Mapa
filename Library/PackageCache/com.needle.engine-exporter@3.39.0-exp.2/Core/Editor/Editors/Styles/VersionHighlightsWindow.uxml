@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns="UnityEngine.UIElements" class="root">
+
+    <Style src="DefaultStyles.uss"/>
+    <Style src="VersionHighlightStyle.uss"/>
+
+    <VisualElement class="highlight-root">
+        <Template src="Header.uxml" name="Header"/>
+        <Instance template="Header"/>
+
+        <VisualElement class="highlight-top">
+            <TextElement class="description" text="Thank you for using Needle Engine. Below you find notable changes and additions since your last update!"/>
+        </VisualElement>
+
+        <ScrollView class="content">
+            <VisualElement class="nothing-here">
+                <TextElement text="Oops nothing is here - how embarrassing..."/>
+            </VisualElement>
+        </ScrollView>
+    </VisualElement>
+
+    <VisualElement class="footer">
+        <VisualElement class="left">
+            <Button class="link small" text="Full Changelog on GitHub ↗"
+                    name="https://github.com/needle-tools/needle-engine-support/releases"/>
+        </VisualElement>
+        <VisualElement class="right">
+            <VisualElement class="low-contrast horizontal-layout">
+                <Label class="version-label" text="Version: "/>
+                <Label class="version" text=""/>
+            </VisualElement>
+        </VisualElement>
+    </VisualElement>
+</UXML>

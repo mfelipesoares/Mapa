@@ -1,0 +1,31 @@
+{
+    "name": "Needle.Engine.Common",
+    "rootNamespace": "Needle.Engine",
+    "references": [
+        "GUID:18d18f811ba286c49814567a3cfba688",
+        "GUID:40f39bff7bc9be34182ebe488fcf8228",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "Unity",
+            "expression": "[2021.3.28,2021.3.99]",
+            "define": "HAS_HIDE_IN_CALLSTACKS"
+        },
+        {
+            "name": "Unity",
+            "expression": "[2022.3.7,2022.3.99]",
+            "define": "HAS_HIDE_IN_CALLSTACKS"
+        }
+    ],
+    "noEngineReferences": false
+}

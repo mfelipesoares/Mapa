@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns="UnityEngine.UIElements">
+
+	<Style src="DefaultStyles.uss"/>
+	<Style src="LicenseWindow.uss"/>
+
+	<VisualElement class="content">
+		<Template src="Header.uxml" name="Header"/>
+		<Instance template="Header"/>
+		<VisualElement class="body">
+			<VisualElement class="space-top block desc" text="Info">
+				<TextElement class="selectable paragraph"
+							 text="For commercial use or creating projects on behalf of clients a license is required."/>
+				<TextElement class="selectable paragraph"
+							 text="Use the link below to buy a license, learn about our terms of use and the available commercial plans and features."/>
+			</VisualElement>
+			<VisualElement class="buttons">
+				<Button class="link big" text="View Commercial Plans ↗" name="https://buy.needle.tools/needle-engine" tooltip="Opens the website to buy a license ↗"/>
+				<Button class="link big background" text="Enter License Information" name="preferences:license" tooltip="Opens the settings to enter the license key"/>
+			</VisualElement>
+<!--			<VisualElement class="license-information">-->
+<!--				<Label class="title h3" text="License"/>-->
+<!--				<VisualElement class="horizontal-layout space-between">-->
+<!--					<TextField class="email" label="Email" />-->
+<!--					<Button class="link" text="Manage ↗" name="https://buy.needle.tools/needle-engine/manage" />-->
+<!--				</VisualElement>-->
+<!--				<TextField class="password" label="Invoice ID" />-->
+<!--				<Label class="info low-contrast" text=""/>-->
+<!--			</VisualElement>-->
+		</VisualElement>
+		<VisualElement class="footer">
+			<VisualElement class="left">
+				<Button class="link small" text="License Terms ↗" name="https://needle.tools/eula"/>
+				<Button class="link small" text="Buy a License ↗" name="https://buy.needle.tools/needle-engine"/>
+				<Button class="link small" text="Give us Feedback ↗" name="https://fwd.needle.tools/needle-engine/feedback"/>
+			</VisualElement>
+		</VisualElement>
+	</VisualElement>
+</UXML>

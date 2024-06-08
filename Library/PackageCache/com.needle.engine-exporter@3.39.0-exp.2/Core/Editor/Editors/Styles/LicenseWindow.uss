@@ -1,0 +1,71 @@
+﻿.main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.body {
+    font-size: 14px;
+}
+
+.body, .footer {
+    padding: 10px;
+}
+
+.body .block {
+    padding-bottom: 10px
+}
+
+.body .unity-text-element {
+}
+
+.body .buttons {
+    padding-top: 2%;
+    display: flex;
+    /*flex-direction: row;*/
+    /*justify-content: space-between;*/
+}
+
+.buttons Button {
+    /*width: 49.5%;*/
+}
+
+Button.background {
+    background-color: #444;
+    color: #aaa;
+}
+
+.space-top {
+    margin-top: 10px;
+}
+
+.license-information {
+    margin-top: 10px;
+}
+
+
+.email {
+    flex-grow: 1;
+}
+
+.license-information * {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.license-information .info {
+    margin-top: 4px;
+}
+
+.license-information Button {
+    padding-left: 6px;
+}
+
+.footer {
+    position: absolute;
+}

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns="UnityEngine.UIElements">
+
+    <Style src="DefaultStyles.uss"/>
+    <Style src="VersionHighlightStyle.uss"/>
+
+    <VisualElement class="highlight-header">
+        <TextElement class="version" text=""/>
+    </VisualElement>
+</UXML>

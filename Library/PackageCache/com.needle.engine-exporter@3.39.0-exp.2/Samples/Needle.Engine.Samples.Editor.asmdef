@@ -1,0 +1,57 @@
+{
+    "name": "Needle.Engine.Samples.Editor",
+    "rootNamespace": "Needle.Engine.Samples",
+    "references": [
+        "GUID:f23f84078225740478820679864d14f7",
+        "GUID:4d85374ce7de404ebfda3b5fe6862c01"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.needle.engine-samples",
+            "expression": "",
+            "define": "HAS_NEEDLE_SAMPLES"
+        },
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "10.0.0",
+            "define": "HAS_URP"
+        },
+        {
+            "name": "Unity",
+            "expression": "[2020.3.33,2021)",
+            "define": "HAS_2020_LTS"
+        },
+        {
+            "name": "Unity",
+            "expression": "[2021.3.9,2022)",
+            "define": "HAS_2021_LTS"
+        },
+        {
+            "name": "Unity",
+            "expression": "[2022.3.0,2023)",
+            "define": "HAS_2022_LTS"
+        },
+        {
+            "name": "Unity",
+            "expression": "[2023.3.0,2024)",
+            "define": "HAS_2023_LTS"
+        },
+        {
+            "name": "Unity",
+            "expression": "2024.1",
+            "define": "HAS_UNITY_NEWER_THAN_LTS"
+        }
+    ],
+    "noEngineReferences": false
+}

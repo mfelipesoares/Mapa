@@ -1,0 +1,24 @@
+{
+    "name": "Needle.Engine.EditorSync.Editor",
+    "rootNamespace": "Needle.Engine.EditorSync",
+    "references": [
+        "GUID:ea3cbd3f9e844224cb98065e5dd6b9ef",
+        "GUID:831354f145a84cc88b9bfaf0e0e34fd8",
+        "GUID:6086ce97fb14496588b8986d1f5d770f",
+        "GUID:f23f84078225740478820679864d14f7",
+        "GUID:63199805345a4784cb9f767ea474e8cd",
+        "GUID:53d9e28cde683304c96596ff61b883a4",
+        "GUID:13b9a7b54760441580e7abea2e0e5345"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

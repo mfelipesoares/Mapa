@@ -1,0 +1,20 @@
+{
+    "name": "Needle.Engine.Editor.Emitters",
+    "rootNamespace": "",
+    "references": [
+        "Needle.Engine.Editor",
+        "Needle.Engine.Common",
+        "Needle.Engine"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
