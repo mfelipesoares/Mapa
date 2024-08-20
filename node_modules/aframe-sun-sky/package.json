@@ -1,0 +1,33 @@
+{
+  "name": "aframe-sun-sky",
+  "version": "3.0.4",
+  "description": "Gradient sky with adjustable sun in A-Frame",
+  "main": "dist/aframe-sun-sky.js",
+  "scripts": {
+    "dist": "webpack index.js dist/aframe-sun-sky.js && webpack -p index.js dist/aframe-sun-sky.min.js",
+    "postpublish": "npm run dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supermedium/superframe.git"
+  },
+  "keywords": [
+    "aframe",
+    "aframe-component",
+    "aframe-shader",
+    "aframe-vr",
+    "vr",
+    "mozvr",
+    "webvr"
+  ],
+  "author": "Kevin Ngo <me@ngokevin.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/supermedium/superframe/issues"
+  },
+  "homepage": "https://github.com/supermedium/superframe/tree/components/sun-sky#readme",
+  "devDependencies": {
+    "aframe": "*",
+    "webpack-glsl-loader": "^1.0.1"
+  }
+}

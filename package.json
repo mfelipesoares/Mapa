@@ -1,0 +1,14 @@
+{
+  "name": "a-frame",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./server/easyrtc-server.js"
+  },
+  "author": "Felipe",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "aframe-sun-sky": "^3.0.4",
+    "networked-aframe": "0.12.3"
+  }
+}

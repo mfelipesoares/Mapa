@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.5.0/socket.io.slim.js"></script>
+    <script src="/easyrtc/easyrtc.js"></script>
+    <script src="https://unpkg.com/networked-aframe@^0.12.0/dist/networked-aframe.min.js"></script>
+    <script src="/js/spawn-in-circle.component.js"></script>
+    
+    <script src="js/avatar.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Metaverso UFG</title>
+  </head>
+  <body>
+    <div class="actions">
+      <button id="mic-btn" type="button" class="button">Desligar Microfone</button>
+    </div>
+    <button
+    id="color-changer"
+    style="z-index: 100; bottom: 24px; left: 24px; position: fixed"
+    onclick="let newColor = window.ntExample.randomColor();
+           document.getElementById('player').setAttribute('player-info', 'color', newColor); 
+           document.querySelector('#color-changer').style.backgroundColor = newColor;
+           document.querySelector('#color-changer').style.color = newColor;
+  "
+  >
+    ■
+  </button>
+
+  <input
+    id="username-overlay"
+    style="z-index: 100; bottom: 24px; left: 48px; position: fixed"
+    oninput="document.getElementById('player').setAttribute('player-info', 'name', this.value)"
+  />
+    <a-scene
+      networked-scene="
+      
+    room: basic-audio;
+    debug: true;
+    audio: true;
+    adapter: easyrtc;
+    
+  " renderer="physicallyCorrectLights: true;"
+    >
+    <a-assets>
+      <template id="rig-template">
+        <a-entity></a-entity>
+      </template>
+
+      <template id="head-template">
+        <a-entity class="avatar" player-info networked-audio-source>
+          <a-sphere class="head" scale="0.2 0.22 0.2"></a-sphere>
+          <a-entity class="face" position="0 0.05 0">
+            <a-sphere class="eye" color="white" position="0.06 0.05 -0.16" scale="0.04 0.04 0.04">
+              <a-sphere class="pupil" color="black" position="0 0 -1" scale="0.2 0.2 0.2"></a-sphere>
+            </a-sphere>
+            <a-sphere class="eye" color="white" position="-0.06 0.05 -0.16" scale="0.04 0.04 0.04">
+              <a-sphere class="pupil" color="black" position="0 0 -1" scale="0.2 0.2 0.2"></a-sphere>
+            </a-sphere>
+          </a-entity>
+
+          <!-- here we add a text component for a nametag; the value will be updated by the player-info component -->
+          <a-text
+            class="nametag"
+            value="?"
+            rotation="0 180 0"
+            position=".15 0.3 0"
+            side="double"
+            scale=".5 .5 .5"
+          ></a-text>
+        </a-entity>
+      </template>
+    </a-assets>
+    <a-entity id="rig" movement-controls="fly:true;" spawn-in-circle="radius:3" networked="template:#rig-template;">
+      <a-entity
+        id="player"
+        camera
+        position="0 1.6 0"
+        look-controls
+        wasd-controls
+        spawn-in-circle="radius:3"
+        networked="template:#head-template;attachTemplateToLocal:false;"
+        visible="false"
+      ></a-entity>
+      <a-entity environment="preset:arches"></a-entity>
+    </a-entity>
+      <!-- Add to bottom of the a-assets tag -->
+      <img
+        id="grid"
+        src="img/chao.jpg"
+        crossorigin="anonymous"
+      />
+      <img
+        id="sky"
+        src="./img/sky.jpg"
+        crossorigin="anonymous"
+      />
+
+      <!-- Add to bottom of a-scene tag -->
+      <a-entity
+        position="0 0 0"
+        geometry="primitive: plane; width: 10000; height: 10000;"
+        rotation="-90 0 0"
+        material="src: #grid; repeat: 10000 10000; transparent: true; metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"
+      ></a-entity>
+
+      <a-entity
+        light="color: #faf8f7; intensity: 3; type: ambient;"
+        visible=""
+      ></a-entity>
+      <a-entity light="color: #faf8f7; intensity: 1.5" position="5 5 5"></a-entity>
+
+      <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+    </a-scene>
+
+  </body>
+</html>
